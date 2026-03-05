@@ -1,0 +1,341 @@
+{
+  "id": "e1dd5779-ea3b-429e-8ab2-ac162d74083d",
+  "version": "2.0",
+  "name": "Homework ",
+  "url": "https://stolychnashop.com.ua/ua/",
+  "tests": [{
+    "id": "d50b226a-7d14-454b-960b-fb17a7ea9445",
+    "name": "Add to cart",
+    "commands": [{
+      "id": "9c361bca-cec9-49a3-babd-51e573394e71",
+      "comment": "",
+      "command": "open",
+      "target": "https://stolychnashop.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37aa0401-eecb-44ee-80aa-b70c40b8f59c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e538423-64b6-4b19-a54f-d12fcda5af1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-swiper:nth-child(3) .swiper-slide:nth-child(4) picture > img",
+      "targets": [
+        ["css=.product-swiper:nth-child(3) .swiper-slide:nth-child(4) picture > img", "css:finder"],
+        ["xpath=//img[@alt='Фото Золота каблучка з діамантом (арт. К011698005)']", "xpath:img"],
+        ["xpath=//div[4]/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "064d3734-8411-4c9f-a82b-2ab7ca530cc6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[8]",
+      "targets": [
+        ["css=.buy-btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='card-btns']/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ea8e45-47c1-4da5-867b-f96dfe4bbb44",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/main/div[4]/div[1]/div[2]/div[6]/div[1]/button[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ddea208-54fb-4492-97e6-12b2aaa80e45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.buy-btn:nth-child(1)",
+      "targets": [
+        ["css=.buy-btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='card-btns']/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"]
+      ],
+      "value": "Купити"
+    }, {
+      "id": "82075abb-0532-467e-9faf-7fb5f6b58699",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Оформити замовлення')]",
+      "targets": [
+        ["linkText=Оформити замовлення", "linkText"],
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформити замовлення')]", "xpath:link"],
+        ["xpath=//div[@id='addCartModal']/div/div/div/div/div[4]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/checkout/')]", "xpath:href"],
+        ["xpath=//div[8]/div/div/div/div/div[4]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Оформити замовлення')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff5ddc1-7765-4160-93d1-c4fdc3918715",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["linkText=Оформити замовлення", "linkText"],
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформити замовлення')]", "xpath:link"],
+        ["xpath=//div[@id='addCartModal']/div/div/div/div/div[4]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/checkout/')]", "xpath:href"],
+        ["xpath=//div[10]/div/div/div/div/div[4]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Оформити замовлення')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "adb5dab9-241a-4783-aaa4-3665cebacad5",
+    "name": "Checkboxes",
+    "commands": [{
+      "id": "f9496201-8b99-4973-b034-a8eb6134cc60",
+      "comment": "",
+      "command": "open",
+      "target": "https://stolychnashop.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e8318f-86c7-4739-8381-7818fc97cc6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d56a27db-83d4-428b-8fa8-be4a6e8253f0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Каталог')]",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db514ae5-a89f-4624-b8cd-1dcc56571928",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": "Каталог"
+    }, {
+      "id": "8294690a-2af3-4f3f-b4da-cbec6d6bf25c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sale",
+      "targets": [
+        ["linkText=Sale", "linkText"],
+        ["css=.nav-list > .item:nth-child(2) > a", "css:finder"],
+        ["xpath=//body[@id='openCatalog']/header/div[2]/div/nav/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/sale/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sale')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce8e261a-c0a8-44f3-a3cc-3e9deacdfc48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-side__item:nth-child(7) .form-check:nth-child(3) .checked",
+      "targets": [
+        ["css=.filter-side__item:nth-child(7) .form-check:nth-child(3) .checked", "css:finder"],
+        ["xpath=//div[2]/div/div[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92fa00f0-a76f-4bf3-a2b8-beb1f84f5694",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[2]/div/div[3]/label/span",
+      "targets": [
+        ["css=.filter-side__item:nth-child(7) .form-check:nth-child(3) .checked", "css:finder"],
+        ["xpath=//div[2]/div/div[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d788c5-5733-437e-b919-7a37ef36296d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-side__item:nth-child(8) .form-check:nth-child(10) .checked",
+      "targets": [
+        ["css=.filter-side__item:nth-child(8) .form-check:nth-child(10) .checked", "css:finder"],
+        ["xpath=//div[2]/div/div[10]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a76d3adc-e222-4604-a733-67b19ba96cd8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[2]/div/div[10]/label/span",
+      "targets": [
+        ["css=.filter-side__item:nth-child(7) .form-check:nth-child(10) .checked", "css:finder"],
+        ["xpath=//div[2]/div/div[10]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "add999e4-d5bd-44da-aefe-331e96b905e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-side__item:nth-child(9) .form-check:nth-child(6) .checked",
+      "targets": [
+        ["css=.filter-side__item:nth-child(9) .form-check:nth-child(6) .checked", "css:finder"],
+        ["xpath=//fieldset[8]/div[2]/div/div[6]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b25eef19-772d-4216-9160-8ddb79808323",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.filter-side__item:nth-child(8) .form-check:nth-child(13) .checked",
+      "targets": [
+        ["css=.filter-side__item:nth-child(8) .form-check:nth-child(13) .checked", "css:finder"],
+        ["xpath=//fieldset[8]/div[2]/div/div[13]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0653b781-08e3-4075-bb14-20f2e03790e3",
+    "name": "Banners",
+    "commands": [{
+      "id": "50453039-3d82-4f11-9c65-168ce72ecee9",
+      "comment": "",
+      "command": "open",
+      "target": "https://stolychnashop.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7b9de23-6ef5-40b2-bcd1-02bb67ca6091",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08606d6b-d288-47e0-8020-489b535a1838",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-pagination-bullet:nth-child(2)",
+      "targets": [
+        ["css=.swiper-pagination-bullet:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80387cb1-6212-482c-b3f3-c8156f5c4282",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.swiper-pagination-bullet-active",
+      "targets": [
+        ["css=.swiper-pagination-bullet-active", "css:finder"],
+        ["xpath=//main/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c18b892-41f4-4974-bb55-3ff3602c0084",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-pagination-bullet:nth-child(3)",
+      "targets": [
+        ["css=.swiper-pagination-bullet:nth-child(3)", "css:finder"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d8e361a-ca40-4951-a012-150a75a89ae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-pagination-bullet:nth-child(4)",
+      "targets": [
+        ["css=.swiper-pagination-bullet:nth-child(4)", "css:finder"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41caa7a5-34bb-449f-8251-47b69ba6cb46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-pagination-bullet:nth-child(5)",
+      "targets": [
+        ["css=.swiper-pagination-bullet:nth-child(5)", "css:finder"],
+        ["xpath=//span[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bd12c44-3bef-48b4-a8fc-7b8f84e8d51f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-pagination-bullet:nth-child(6)",
+      "targets": [
+        ["css=.swiper-pagination-bullet:nth-child(6)", "css:finder"],
+        ["xpath=//span[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cb78bf5a-58c7-4a62-b334-08a80b293a74",
+    "name": "Search",
+    "commands": [{
+      "id": "5d3b0b6e-be01-44c2-9bde-df0955af1207",
+      "comment": "",
+      "command": "open",
+      "target": "https://stolychnashop.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29b66616-884f-46d0-b14c-8bdb759f286c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fec12b4-405d-4ee9-bddd-72acd9e9b8c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search_btn:nth-child(2) > svg",
+      "targets": [
+        ["css=.search_btn:nth-child(2) > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "47c51ca7-d322-4c18-bea1-40e6bd5264be",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='q']",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search__form .form-control", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//body[@id='openSearch']/header/div[2]/div/div/form/label/input", "xpath:idRelative"],
+        ["xpath=//form/label/input", "xpath:position"]
+      ],
+      "value": "Сережки"
+    }]
+  }],
+  "suites": [{
+    "id": "80a46c89-3b8d-45e0-a5b7-0c5b47af351a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://stolychnashop.com.ua/ua/"],
+  "plugins": []
+}
